@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.title_class {
+				position: relative;
+				width: 100%;
+				height: 70px;
+			}
+			
+			.title_class .title_class_right {
+				height: 34px;
+				width: 445px;
+				padding-top: 20px;
+				padding-right: 80px;
+				float: right;
+			}
+			
+			.title_class .title_class_right .unlogin {
+				margin-top: 8px;
+				margin-left: 10px;
+				width: 78px;
+				float: right;
+			}
+			
+			.title_class>img {
+				position: absolute;
+				top: 30%;
+				padding-left: 121px;
+			}
+			
+			.title_class .title_class_right>a {
+				margin-right: 20px;
+				text-decoration: none;
+				font-size: 14px;
+				color: #000000;
+			}
+			
+			.title_class .title_class_right input[type=text] {
+				position: relative;
+				width: 225px;
+				height: 32px;
+				border: 1px solid green;
+			}
+			
+			.title_class .title_class_right input[type=button] {
+				width: 40px;
+				height: 36px;
+				background-color: greenyellow;
+				outline: none;
+				border-color: greenyellow;
+			}
+			
+			.title_class .title_class_right .unlogin>a {
+				margin-top: 20px;
+				color: black;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			
+			.title_class .title_class_right .unlogin>a:hover {
+				color: greenyellow;
+			}
+			/*/////////////////////////////////////////////////////*/
+			
+			.live_class {
+				width: 100%;
+				height: 475px;
+			}
+			
+			.live_class .live_class_top {
+				height: 30px;
+			}
+			
+			.live_class .live_class_top .live_class_top_left {
+				padding-left: 121px;
+			}
+			
+			.live_class .live_class_top .live_class_top_left>li {
+				font-size: 14px;
+				float: left;
+				margin-right: 40px;
+				padding-top: 5px;
+				list-style: none;
+			}
+			
+			.live_class .live_class_top .live_class_top_left>li>a {
+				color: #000000;
+			}
+			
+			.live_class .live_class_top .live_class_top_right {
+				float: right;
+				padding-right: 80px;
+			}
+			
+			.live_class .live_class_top .live_class_top_right>li {
+				font-size: 14px;
+				float: left;
+				margin-left: 20px;
+				padding-top: 5px;
+			}
+			
+			.live_class .live_class_top .live_class_top_right>li>a {
+				color: greenyellow;
+			}
+			
+			.live_class .live_class_top .live_class_top_right .text>a {
+				color: #000000;
+			}
+			
+			.live_class .live_class_content {
+				position: relative;
+				background-color: #220088;
+				width: 100%;
+				height: 380px;
+			}
+			
+			.live_class .live_class_content .live_class_content_left {
+				position: absolute;
+				height: 380px;
+				width: 197px;
+				background-color: black;
+				margin-left: 123px;
+			}
+			
+			.live_class .live_class_content>img {
+				margin-left: 320px;
+			}
+			
+			.live_class .live_class_content .live_class_content_left>ul>li {
+				margin-bottom: 20px;
+				margin-top: 5px;
+				text-align: center;
+			}
+			
+			.live_class .live_class_content .live_class_content_left>ul>li>a {
+				color: white;
+				font-size: 17px;
+			}
+			
+			.live_class .live_class_content .live_class_content_right {
+				position: absolute;
+				width: 200px;
+				height: 283px;
+				background-color: #99ffff;
+				margin-left: 1182px;
+				top: 50px;
+			}
+			
+			.live_class .live_class_content .live_class_content_right>h4 {
+				width: 143px;
+				position: absolute;
+				padding-top: 23px;
+				padding-left: 30px;
+				text-align: center;
+			}
+			
+			.live_class .live_class_content .live_class_content_right>img {
+				position: absolute;
+				margin-top: 88px;
+				margin-left: 60px;
+			}
+			
+			.live_class .live_class_content .live_class_content_right>input[type=button] {
+				width: 160px;
+				height: 37px;
+				background-color: lawngreen;
+				margin-top: 200px;
+				margin-left: 25px;
+				outline-style: none;
+				border-color: lawngreen;
+			}
+			
+			.live_class .live_class_content .live_class_content_right>p {
+				position: absolute;
+				width: 133px;
+				text-align: center;
+				font-size: 14px;
+				margin-left: 30px;
+				margin-top: 8px;
+			}
+			
+			.live_class .live_class_bottom {
+				position: relative;
+				margin: 0 auto;
+				height: 60px;
+				width: 1180px;
+			}
+			
+			.live_class .live_class_bottom>a {
+				position: absolute;
+				top: 30%;
+				font-size: 16px;
+			}
+			
+			.live_class .live_class_bottom>ul {
+				margin-left: 200px;
+			}
+			
+			.live_class .live_class_bottom>ul>li>a {
+				display: block;
+				width: 110px;
+				height: 60px;
+				margin-top: 15px;
+				margin-left: 80px;
+			}
+			
+			.live_class .live_class_bottom>ul>li {
+				float: left;
+			}
+			
+			section .recommend_class {
+				position: relative;
+				width: 100%;
+				height: 420px;
+				background-color: #EEEEEE;
+			}
+			
+			section .recommend_class .recommend_class_content {
+				position: absolute;
+				width: 1320px;
+				height: 315px;
+				margin-top: 55px;
+				margin-left: 120px;
+				/*background-color: cornflowerblue;*/
+			}
+			
+			section .recommend_class .recommend_class_content ul>li {
+				float: left;
+				margin-right: 20px;	
+			}
+			/*添加阴影效果*/
+			
+			section .recommend_class .recommend_class_content ul>li:hover {
+				box-shadow: 0 1px 10px black;
+				z-index: 1;
+			}
+			
+			section .recommend_class .recommend_class_content ul>li:hover>div>img {
+				transform: scale(1.25);
+			}
+			
+			section .recommend_class .recommend_class_content ul>li>div {
+				background-color: white;
+				overflow: hidden;
+				height: 273px;
+				width: 241px;
+			}
+			
+			section .recommend_class .recommend_class_content ul>li>div>h4 {
+				margin-left: 8px;
+			}
+			
+			section .recommend_class .recommend_class_content ul>li>div>img {
+				height: 136px;
+				transition-delay: 0.2s;
+			}
+			/************************
+			 * ***
+			 *
+			 *
+			 *
+			 *
+			 *
+			 **
+			 **
+			 **
+			 ***
+			 */
+			
+			section .recommend_class .recommend_class_content ul>li>div>span {
+				font-size: 13px;
+				color: greenyellow;
+				margin-left: 8px;
+			}
+			
+			section .recommend_class .recommend_class_content ul>li>div>p {
+				font-size: 12px;
+				margin-top: 13px;
+				margin-left: 8px;
+				color: darkgrey;
+			}
+			
+			section .recommend_class_talking {
+				position: relative;
+				width: 100%;
+				height: 300px;
+				background-color: #617FA5;
+			}
+			
+			section .recommend_class_talking>div {
+				position: absolute;
+				width: 386px;
+				height: 200px;
+				margin-left: 120px;
+				top: 50px;
+			}
+			
+			section .recommend_class_talking>div>p {
+				color: white;
+				text-align: center;
+				font-size: 24px;
+				margin-top: 15px;
+			}
+			
+			section .recommend_class_talking>div>input[type=button] {
+				width: 200px;
+				height: 40px;
+				background-color: green;
+				border-color: green;
+				border-style: none;
+				color: white;
+				font-size: 15px;
+				margin-left: 90px;
+				margin-top: 20px;
+			}
+			
+			section .recommend_class_talking>div>input[type=button]:hover {
+				background: #96D103;
+			}
+			
+			section .recommend_class_talking>div>h4 {
+				font-size: 12px;
+				color: white;
+				bottom: 0;
+				margin-left: 75px;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div {
+				position: relative;
+				float: left;
+				width: 408px;
+				height: 232px;
+				background-color: white;
+				margin-left: 550px;
+				top: 50px;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>img {
+				position: absolute;
+				border-radius: 50%;
+				height: 33px;
+				margin-left: 15px;
+				top: 18px;
+			}
+			/*偷懒的做法，不对的*/
+			
+			section .recommend_class_talking>ul>.talking_theater_jj {
+				position: absolute;
+				margin-left: 430px;
+			}
+			
+			section .recommend_class_talking:hover {
+				box-shadow: 0 1px 10px black;
+				z-index: 1;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>.talking_theater {
+				position: absolute;
+				width: 86px;
+				height: 17px;
+				margin-left: 55px;
+				top: 24px;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>.talking_theater>.theater {
+				background-color: yellow;
+				color: white;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>.talking_theater_right {
+				position: absolute;
+				width: 125px;
+				height: 15px;
+				margin-left: 263px;
+				top: 24px;
+				font-size: 13px;
+				color: gray;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>.talking_theater_right>.theater_right {
+				color: black;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>p {
+				position: absolute;
+				top: 50%;
+				font-size: 20px;
+				color: black;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>h5 {
+				position: absolute;
+				bottom: 0;
+				left: 35%;
+				color: black;
+			}
+			
+			section .recommend_class_talking>ul>li>a>div>h5>span {
+				color: greenyellow;
+			}
+			/*********************************************************************************************/
+			
+			section .choose_class {
+				position: relative;
+				height: 3478px;
+				width: auto;
+				background-color: #EEEEEE;
+			}
+			
+			section .choose_class .choose_class_top {
+				height: 208px;
+				width: 1262px;
+				margin: 0 auto;
+			}
+			
+			section .choose_class .choose_class_top>ul>li {
+				float: left;
+				margin-right: 14px;
+				margin-top: 50px;
+			}
+			
+			section .choose_class .choose_class_content {
+				position: relative;
+				height: 1510px;
+				width: 1262px;
+				margin: 0 auto;
+			}
+			
+			section .choose_class .choose_class_content>ul>li {
+				height: 466px;
+				margin-bottom: 55px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div {
+				position: relative;
+				height: 48px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>h2>a {
+				color: black;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>h2>a:hover {
+				color: green;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>ul {
+				position: absolute;
+				margin-left: 100px;
+				bottom: 15px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>ul>li {
+				float: left;
+				margin-right: 20px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>ul>li>a {
+				color: black;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>ul>li>a:hover {
+				color: green;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>span {
+				float: right;
+				margin-top: -18px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>span>a {
+				color: #000000;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top>div>span>a:hover {
+				color: green;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_left {
+				position: absolute;
+				left: 0;
+				width: 238px;
+				height: 418px;
+				background-color: white;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_left .choose_class_content_top_left_top {
+				height: 322px;
+				width: 238px;
+				background-color: #6FC8CC;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_left .choose_class_content_top_left_top>p {
+				font-size: 14px;
+				color: white;
+				padding-top: 40px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_left .choose_class_content_top_left_top>p:hover {
+				color: gray;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_left .choose_class_content_top_left_top>h4 {
+				font-size: 25px;
+				margin-top: 10px;
+				color: white;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six {
+				position: absolute;
+				height: 418px;
+				margin-left: 256px;
+				/*		top: 48px;*/
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six>ul {
+				margin-left: 6px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six>ul>li {
+				position: relative;
+				float: left;
+				width: 237px;
+				height: 203px;
+				background-color: white;
+				margin-right: 15px;
+				margin-bottom: 12px;
+			}
+			
+			.choose_class .choose_class_content>ul>li>.choose_class_six>ul>li:hover {
+				box-shadow: 0 1px 10px black;
+				z-index: 1;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six>ul>li>a>img {
+				width: 237px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six>ul>li>a>p {
+				margin-left: 8px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six>ul>li>a>span {
+				position: absolute;
+				margin-left: 8px;
+				bottom: 10px;
+				color: gray;
+				font-size: 12px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_six>ul>li>a>h6 {
+				position: absolute;
+				font-size: 12px;
+				color: gray;
+				bottom: 10px;
+				right: 0;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right {
+				position: absolute;
+				/*	top: 48px;*/
+				right: 0;
+				width: 238px;
+				height: 418px;
+				background-color: white;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>h3 {
+				padding-left: 13px;
+				padding-top: 5px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>h3>span {
+				display: inline-block;
+				height: 15px;
+				width: 3px;
+				background-color: green;
+				margin-right: 5px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>ul {
+				margin-top: 15px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>ul>li {
+				margin-bottom: 20px;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>ul>li>a>p {
+				font-size: 13px;
+				color: black;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>ul>li>a>span {
+				font-size: 10px;
+				color: gray;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>ul>li>a>span:hover {
+				color: greenyellow;
+			}
+			
+			section .choose_class .choose_class_content>ul>li>.choose_class_content_top_right>ul>li>a>p:hover {
+				color: greenyellow;
+			}
+			
+			section .choose_class .choose_class_pic {
+				height: 206px;
+				width: 1262px;
+				margin: 0 auto;
+			}
+			
+			section .choose_class .choose_class_pic>ul>li {
+				float: left;
+				margin-right: 10px;
+				margin-top: 50px;
+			}
+			
+			footer .bottom_class {
+				position: relative;
+				height: 558px;
+				width: 100%;
+				background-color: #222A51;
+			}
+			
+			footer .bottom_class>p {
+				text-align: center;
+				font-size: 30px;
+				color: white;
+				padding-top: 50px;
+				margin: 0 auto;
+			}
+			
+			footer .bottom_class>ul {
+				margin-left: 182px;
+			}
+			
+			footer .bottom_class>ul>li {
+				float: left;
+				margin-right: 158px;
+			}
+			
+			footer .bottom_class>ul>li>div {
+				text-align: center;
+				width: 260px;
+				height: 310px;
+				color: white;
+				margin-top: 40px;
+			}
+			
+			footer .bottom_class>ul>li>div>h3 {
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			
+			footer .bottom_class>ul>li>div>span {
+				font-size: 12px;
+				padding-top: 10px;
+			}
+			
+			footer .bottom_class>a {
+				position: absolute;
+				text-align: center;
+				font-size: 18px;
+				color: white;
+				padding-top: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 182px;
+				height: 40px;
+				background-color: lawngreen;
+				bottom: 43px;
+			}
+			
+			footer .bottom_class>a:hover {
+				background-color: green;
+			}
+			
+			footer .bottom_class_pic {
+				width: 100%;
+				height: 210px;
+				background-color: #333333;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="title_class">
+				<img src="img/B34DC36428D2D51B8EF5EE2C83CE9BF2.png" />
+				<div class="title_class_right">
+					<img src="img/75298CEB06474FD85CBC95D208B44F8E.png" />
+					<a href="#">客户端</a>
+					<input type="text" placeholder="搜索感兴趣的课程" /><input type="button" value="搜索" />
+					<div class="unlogin">
+						<a href="#">登录<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>注册</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="live_class">
+				<div class="live_class_top">
+					<ul class="live_class_top_left">
+						<li>
+							<a href="#">课堂</a>
+						</li>
+						<li>
+							<a href="#">名校</a>
+						</li>
+						<li>
+							<a href="#">学*问</a>
+						</li>
+						<li>
+							<a href="#">学校云</a>
+						</li>
+						<li>
+							<a href="#">考研</a>
+						</li>
+					</ul>
+
+					<ul class="live_class_top_right">
+						<li>
+							<a href="#">网易云课堂</a>
+						</li>
+						<li class="text">
+							<a href="#">更多课程频道</a>
+						</li>
+					</ul>
+				</div>
+				<div class="live_class_content">
+
+					<div class="live_class_content_left">
+						<ul>
+							<li>
+								<a href="">计算机</a>
+							</li>
+							<li>
+								<a href="">经济管理</a>
+							</li>
+							<li>
+								<a href="">考研</a>
+							</li>
+							<li>
+								<a href="">心理学</a>
+							</li>
+							<li>
+								<a href="">外语</a>
+							</li>
+							<li>
+								<a href="">文学历史</a>
+							</li>
+							<li>
+								<a href="">艺术设计</a>
+							</li>
+							<li>
+								<a href="">工学</a>
+							</li>
+							<li>
+								<a href="">更多</a>
+							</li>
+						</ul>
+
+					</div>
+					<img src="img/a2040e3c-8362-4167-b2c5-1b5c90c7b239.jpg" />
+					<div class="live_class_content_right">
+						<h4>免费学习名校名师精品课程</h4>
+						<img src="img/49E89BEA3F1B3F1AC788F5F94C4A457F.png" />
+
+						<input type="button" value="登录" />
+						<p> 网易和高等教育出版社出品</p>
+					</div>
+
+				</div>
+				<div class="live_class_bottom">
+					<a href="#">全部146所合作高校</a>
+					<ul>
+						<li>
+							<a href="#"><img src="img/0E1CA0462AD847E2F1ECE099FB9F658D.png " width="110px" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/4660A53B645D7E5D09860BE200E2BC02.png" width="110px" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/5CC1B174CC3720F04AD96049ABCAC33D.png" width="110px" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/AEE98EB739A46AB06C02307E236069C7.png" width="110px" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/E0B01352DE274FFEB5D1D8AC87865E8D.png" width="110px" /></a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			</div>
+
+		</header>
+		<section>
+			<div class="recommend_class">
+				<div class="recommend_class_content">
+					<h2>推介课程</h2>
+					<ul>
+						<li>
+							<div>
+								<img src="img/36BC1F265CE3928FB14E508437213477.jpg" />
+								<h4>大学英语</h4>
+								<span>进行至第一周</span>
+								<p>中南大学</p>
+								<p>学好英语，走遍天下都不怕</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="img/DEBB7689BCC42453A2F9CD41AF984CEA.png" />
+								<h4>大学英语</h4>
+								<span>进行至第一周</span>
+								<p>西南大学</p>
+								<p>用伦理学考虑生命这个大命题！</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="img/8CDF4669BA5BE27A5614BB713C81B115.jpg" />
+								<h4>大学英语</h4>
+								<span>进行至第一周</span>
+								<p>四川大学</p>
+								<p>eye我所爱——呵护你的眼点击</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="img/FC0B70B6F649345AD0AB9B66856EFF69.jpg" />
+								<h4>大学英语</h4>
+								<span>进行至第一周</span>
+								<p>电子科技大学</p>
+								<p>英语进阶读与写（上）</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="img/D88AE3DD528E2F3C72AE7CED2C65C089.png" />
+								<h4>大学英语</h4>
+								<span>进行至第一周</span>
+								<p>厦门大学</p>
+								<p>大学英语写作基础点击</p>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="recommend_class_talking">
+				<div>
+					<img src="img/47E566AAA7102314609B9A806E73D3B1.png" />
+					<p>一起学习 一起成长</p>
+					<input type="button" value="加入中国大学MOOC" />
+					<h4>已有149,67万老师和同学在此发言讨论</h4>
+
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<div>
+								<img src="img/5B3C5854388D704699F51C2928E2B9C5.png" />
+								<div class="talking_theater">
+									<span>张晓敏</span>
+									<span class="theater">老师</span>
+								</div>
+
+								<div class="talking_theater_right">
+									<span>来自</span>
+									<span class="theater_right">婚恋-职场-人格</span>
+								</div>
+
+								<p>【老师分享】 中国式打压式教育|"我都是为了你好啊"</p>
+
+								<h5><span>90人</span>参与讨论</h5>
+							</div>
+
+						</a>
+					</li>
+					<li class="talking_theater_jj">
+						<a href="#">
+							<div>
+								<img src="img/8DB22FD17D82AA3E31F0B20BDCA990A2.jpg" />
+								<div class="talking_theater">
+									<span>天源</span>
+									<span class="theater">老师</span>
+								</div>
+
+								<div class="talking_theater_right">
+									<span>来自</span>
+									<span class="theater_right">婚恋-职场-人格</span>
+								</div>
+
+								<p>如果你老婆收入是你三倍以上</p>
+
+								<h5><span>150人</span>参与讨论</h5>
+							</div>
+
+						</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="choose_class">
+
+				<div class="choose_class_top">
+					<ul>
+						<li>
+							<a href="#"><img src="img/11991d13-5086-499a-afe7-9bb07ba04182.jpg" /> </a>
+						</li>
+						<li>
+							<a href="#"><img src="img/1704c4cc-9ab6-40f0-b524-ee3699cf0bb4.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/65f5a417-54c3-4255-b954-d3a844357251.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="choose_class_content">
+					<ul>
+						<li>
+							<div class="choose_class_content_top">
+								<div>
+									<h2><a href="">计算机</a></h2>
+									<ul>
+										<li>
+											<a href="#">计算机基础</a>
+										</li>
+										<li>
+											<a href="#">编程语言</a>
+										</li>
+										<li>
+											<a href="#">数据库与数据结构</a>
+										</li>
+										<li>
+											<a href="#">计算机应用</a>
+										</li>
+										<li>
+											<a href="#">软件工程</a>
+										</li>
+										<li>
+											<a href="#">计算机组成</a>
+										</li>
+									</ul>
+									<span><a href="#">查看全部</a></span>
+								</div>
+							</div>
+							<div class="choose_class_content_top_left">
+								<div class="choose_class_content_top_left_top">
+									<p>微软人工智能-数据分析平台</p>
+									<h4>数据分析平台概况</h4>
+								</div>
+								<ul>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span>
+									</li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+								</ul>
+
+							</div>
+
+							<div class="choose_class_six">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/55386E9914449079670CA911888048C7.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/2BA44EC21502F283497947C3BC885E59.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/7539470440E8644DD98F840A3C32C1DA.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/1b344439-1454-4ebe-a65e-484e4e864884.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/9628964510229715DFDE900AB5F62FA8.jpg">
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/B4839DBDE2346ADEAB71918D799EB73D.png" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="choose_class_content_top_right">
+								<h3><span></span>精彩讨论</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="choose_class_content_top">
+								<div>
+									<h2><a href="">计算机</a></h2>
+									<ul>
+										<li>
+											<a href="#">计算机基础</a>
+										</li>
+										<li>
+											<a href="#">编程语言</a>
+										</li>
+										<li>
+											<a href="#">数据库与数据结构</a>
+										</li>
+										<li>
+											<a href="#">计算机应用</a>
+										</li>
+										<li>
+											<a href="#">软件工程</a>
+										</li>
+										<li>
+											<a href="#">计算机组成</a>
+										</li>
+									</ul>
+									<span><a href="#">查看全部</a></span>
+								</div>
+							</div>
+							<div class="choose_class_content_top_left">
+								<div class="choose_class_content_top_left_top">
+									<p>微软人工智能-数据分析平台</p>
+									<h4>数据分析平台概况</h4>
+								</div>
+								<ul>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span>
+									</li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+								</ul>
+
+							</div>
+
+							<div class="choose_class_six">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/55386E9914449079670CA911888048C7.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/2BA44EC21502F283497947C3BC885E59.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/7539470440E8644DD98F840A3C32C1DA.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/1b344439-1454-4ebe-a65e-484e4e864884.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/9628964510229715DFDE900AB5F62FA8.jpg">
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/B4839DBDE2346ADEAB71918D799EB73D.png" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="choose_class_content_top_right">
+								<h3><span></span>精彩讨论</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="choose_class_content_top">
+								<div>
+									<h2><a href="">计算机</a></h2>
+									<ul>
+										<li>
+											<a href="#">计算机基础</a>
+										</li>
+										<li>
+											<a href="#">编程语言</a>
+										</li>
+										<li>
+											<a href="#">数据库与数据结构</a>
+										</li>
+										<li>
+											<a href="#">计算机应用</a>
+										</li>
+										<li>
+											<a href="#">软件工程</a>
+										</li>
+										<li>
+											<a href="#">计算机组成</a>
+										</li>
+									</ul>
+									<span><a href="#">查看全部</a></span>
+								</div>
+							</div>
+							<div class="choose_class_content_top_left">
+								<div class="choose_class_content_top_left_top">
+									<p>微软人工智能-数据分析平台</p>
+									<h4>数据分析平台概况</h4>
+								</div>
+								<ul>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span>
+									</li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+								</ul>
+
+							</div>
+
+							<div class="choose_class_six">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/55386E9914449079670CA911888048C7.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/2BA44EC21502F283497947C3BC885E59.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/7539470440E8644DD98F840A3C32C1DA.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/1b344439-1454-4ebe-a65e-484e4e864884.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/9628964510229715DFDE900AB5F62FA8.jpg">
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/B4839DBDE2346ADEAB71918D799EB73D.png" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="choose_class_content_top_right">
+								<h3><span></span>精彩讨论</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+					</ul>
+
+				</div>
+
+				<div class="choose_class_pic">
+					<ul>
+						<li>
+							<a href="#"><img src="img/ff9b7dad-0d04-4263-b550-ee0dfeda0965.jpg" /> </a>
+						</li>
+						<li>
+							<a href="#"><img src="img/35b95d73-e5e2-4670-bb70-c8b52eb5b8c3.jpg" /></a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="choose_class_content">
+					<ul>
+						<li>
+							<div class="choose_class_content_top">
+								<div>
+									<h2><a href="">计算机</a></h2>
+									<ul>
+										<li>
+											<a href="#">计算机基础</a>
+										</li>
+										<li>
+											<a href="#">编程语言</a>
+										</li>
+										<li>
+											<a href="#">数据库与数据结构</a>
+										</li>
+										<li>
+											<a href="#">计算机应用</a>
+										</li>
+										<li>
+											<a href="#">软件工程</a>
+										</li>
+										<li>
+											<a href="#">计算机组成</a>
+										</li>
+									</ul>
+									<span><a href="#">查看全部</a></span>
+								</div>
+							</div>
+							<div class="choose_class_content_top_left">
+								<div class="choose_class_content_top_left_top">
+									<p>微软人工智能-数据分析平台</p>
+									<h4>数据分析平台概况</h4>
+								</div>
+								<ul>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span>
+									</li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+								</ul>
+
+							</div>
+
+							<div class="choose_class_six">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/55386E9914449079670CA911888048C7.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/2BA44EC21502F283497947C3BC885E59.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/7539470440E8644DD98F840A3C32C1DA.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/1b344439-1454-4ebe-a65e-484e4e864884.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/9628964510229715DFDE900AB5F62FA8.jpg">
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/B4839DBDE2346ADEAB71918D799EB73D.png" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="choose_class_content_top_right">
+								<h3><span></span>精彩讨论</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="choose_class_content_top">
+								<div>
+									<h2><a href="">计算机</a></h2>
+									<ul>
+										<li>
+											<a href="#">计算机基础</a>
+										</li>
+										<li>
+											<a href="#">编程语言</a>
+										</li>
+										<li>
+											<a href="#">数据库与数据结构</a>
+										</li>
+										<li>
+											<a href="#">计算机应用</a>
+										</li>
+										<li>
+											<a href="#">软件工程</a>
+										</li>
+										<li>
+											<a href="#">计算机组成</a>
+										</li>
+									</ul>
+									<span><a href="#">查看全部</a></span>
+								</div>
+							</div>
+							<div class="choose_class_content_top_left">
+								<div class="choose_class_content_top_left_top">
+									<p>微软人工智能-数据分析平台</p>
+									<h4>数据分析平台概况</h4>
+								</div>
+								<ul>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span>
+									</li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+								</ul>
+
+							</div>
+
+							<div class="choose_class_six">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/55386E9914449079670CA911888048C7.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/2BA44EC21502F283497947C3BC885E59.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/7539470440E8644DD98F840A3C32C1DA.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/1b344439-1454-4ebe-a65e-484e4e864884.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/9628964510229715DFDE900AB5F62FA8.jpg">
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/B4839DBDE2346ADEAB71918D799EB73D.png" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="choose_class_content_top_right">
+								<h3><span></span>精彩讨论</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="choose_class_content_top">
+								<div>
+									<h2><a href="">计算机</a></h2>
+									<ul>
+										<li>
+											<a href="#">计算机基础</a>
+										</li>
+										<li>
+											<a href="#">编程语言</a>
+										</li>
+										<li>
+											<a href="#">数据库与数据结构</a>
+										</li>
+										<li>
+											<a href="#">计算机应用</a>
+										</li>
+										<li>
+											<a href="#">软件工程</a>
+										</li>
+										<li>
+											<a href="#">计算机组成</a>
+										</li>
+									</ul>
+									<span><a href="#">查看全部</a></span>
+								</div>
+							</div>
+							<div class="choose_class_content_top_left">
+								<div class="choose_class_content_top_left_top">
+									<p>微软人工智能-数据分析平台</p>
+									<h4>数据分析平台概况</h4>
+								</div>
+								<ul>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span>
+									</li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+									<li>
+										<a href="#"> <span> 机器学习服务 </span></a>
+										<span>46‘6” </span></li>
+								</ul>
+
+							</div>
+
+							<div class="choose_class_six">
+								<ul>
+									<li>
+										<a href="#">
+											<img src="img/55386E9914449079670CA911888048C7.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/2BA44EC21502F283497947C3BC885E59.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/7539470440E8644DD98F840A3C32C1DA.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/1b344439-1454-4ebe-a65e-484e4e864884.jpg" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/9628964510229715DFDE900AB5F62FA8.jpg">
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/B4839DBDE2346ADEAB71918D799EB73D.png" />
+											<p>游戏开发入门</p>
+											<span>北京理工大学</span>
+											<h6>人数99人</h6>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="choose_class_content_top_right">
+								<h3><span></span>精彩讨论</h3>
+								<ul>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p>什么是数据类型？数据类型的作用是什么？</p>
+											<span>数据结构</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</section>
+		<footer>
+			<div class="bottom_class">
+				<p>即便错过心仪的大学，也不要错过中国大学MOOC</p>
+
+				<ul>
+					<li>
+						<div>
+							<img src="img/03B3283015E4A7AEBA2F62705D7A6068.png" />
+							<h3>陈睿</h3>
+							<span>北京某事业单位 公务员</span><br />
+							<span>我第一次感受到故宫角楼在夕阳下震撼的美，便是在考完《中国古代建筑艺术》之后的那个下午；学完了《不朽的艺术》，博物馆不再是陪儿子完成任务了。学习MOOC之前和之后的对比，让我感受最深的就是鲍勃·迪伦的那句“昔日我曾苍老，如今风华</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="img/188D3CE39192F285304A2AA8AAE570D6.png" />
+							<h3>周昀</h3>
+							<span>中南财经政法大学 工商管理</span><br />
+							<span>中国大学MOOC帮助我在专业上更进一步：《公司金融》，《财务管理》，《会计学》，《大学英语口语》，《大学英语写作》，我刷了一遍又一遍。很显然，卿不负我如来亦此，我等来了命运对我的眷顾，成为浙大一名准博士生。</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="img/534DC33D9C26EB680537236EFF907B4A.png" />
+							<h3>刘瑜</h3>
+							<span>北京某软件公司 测试兼商务英语培训师</span><br />
+							<span>原来学习是可以上瘾的。我相信只要找对打开姿势，都会被慕课的魅力所吸引：分课程做笔记；听到精彩的地方，写两笔小感悟；有困惑的地方，在讨论区总有热心的学友们答疑解惑；偶尔还能得到老师的评语，受宠若惊啊。</span>
+						</div>
+					</li>
+				</ul>
+				<a href=" #"> 加入中国大学
+					<mooc></mooc>
+				</a>
+			</div>
+
+			<div class="bottom_class_pic">
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>
